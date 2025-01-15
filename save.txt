@@ -1,0 +1,45 @@
+
+    -- buttons.play:update(dt)
+    -- buttons.quit:update(dt)
+    -- local mouseX, mouseY = push:toGame(love.mouse.getPosition())
+    
+    -- if self:isMouseOverButton(mouseX, mouseY, self.buttonBounds.play) then
+    --     buttons.play:gotoFrame(2)
+    --     buttons.play:update(dt)
+    -- else
+    --     buttons.play:gotoFrame(1)
+    --     buttons.play:update(dt)
+    -- end
+
+    -- if self:isMouseOverButton(mouseX, mouseY, self.buttonBounds.quit) then
+    --     buttons.quit:gotoFrame(2)
+    --     buttons.quit:update(dt)
+    -- else
+    --     buttons.quit:gotoFrame(1)
+    --     buttons.quit:update(dt)
+    -- end
+
+    
+-- function MenuState:isMouseOverButton(mouseX, mouseY, button)
+--     return mouseX >= button.x and mouseX <= button.x + button.width and
+--            mouseY >= button.y and mouseY <= button.y + button.height
+-- end
+
+-- -- Handle mouse clicks for button actions
+-- function MenuState:mousepressed(x, y, button, istouch, presses)
+--     -- If the left mouse button is clicked
+--     if button == 1 then
+--         -- Check if the play button was clicked
+--         if self:isMouseOverButton(x, y, self.buttonBounds.play) then
+--             -- Change to play state or perform action
+--             -- gStateMachine:change('play')
+--             print("Play button clicked")
+--         end
+
+--         -- Check if the quit button was clicked
+--         if self:isMouseOverButton(x, y, self.buttonBounds.quit) then
+--             -- Quit the game
+--             love.event.quit()
+--         end
+--     end
+-- end

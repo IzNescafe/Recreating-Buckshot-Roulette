@@ -2,6 +2,7 @@ Class = require 'libs/class'
 
 require 'libs/StateMachine'
 push = require 'libs/push'
+anim8 = require 'libs/anim8'
 
 require 'states/BaseState'
 require 'states/MenuState'
@@ -22,7 +23,7 @@ function love.load()
 
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT,WINDOW_WIDTH, WINDOW_HEIGHT, {
         fullscreen = false,
-        resizable = false,
+        resizable = true,
         vsync = true
     })
 
