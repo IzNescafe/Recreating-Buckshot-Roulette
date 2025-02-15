@@ -6,6 +6,7 @@ anim8 = require 'libs/anim8'
 
 require 'states/BaseState'
 require 'states/MenuState'
+require 'states/PlayState'
 
 
 WINDOW_WIDTH = 1280
@@ -28,9 +29,10 @@ function love.load()
     })
 
     love.window.setTitle('Buckshot Roulette')
-
+  
     gStateMachine = StateMachine {
-        ['menu'] = function() return MenuState() end
+        ['menu'] = function() return MenuState() end,
+        ['play'] = function() return PlayState() end
     }
     gStateMachine:change('menu')
 
